@@ -14,7 +14,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin:['http://localhost:5173', import.meta.env.VITE_CLIENT_URL],
+  origin:['http://localhost:5173',  process.env.CLIENT_URL],
   credentials: true
 }));
 
